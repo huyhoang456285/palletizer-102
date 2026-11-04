@@ -564,3 +564,8 @@ class Palletizer(Generic, EasyResource):  # noqa: F405  (Generic comes from the 
                 await self.sequencer.do_command({"clear_box_transform": {"seq": i}})
             except Exception:  # noqa: BLE001
                 pass
+    async def clear(self):
+        """Empty the pallet, the scene, and the record."""
+        await self.clear_boxes()
+        self.placed = []
+        return {"cleared": True}
