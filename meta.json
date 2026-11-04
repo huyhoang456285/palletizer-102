@@ -9,7 +9,7 @@
     }
   ],
   "visibility": "private",
-  "url": "",
+  "url": "https://github.com/huyhoang456285/palletizer-102",
   "description": "Packs boxes from the pick-station onto a pallet.",
   "markdown_link": "README.md",
   "entrypoint": "dist/main",
